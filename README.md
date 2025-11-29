@@ -77,7 +77,7 @@ Ejecutar el servidor de desarrollo:
 npm run dev
 
 
-El proyecto quedará disponible en:
+- El proyecto quedará disponible en:
 
 http://localhost:5173
 
