@@ -17,8 +17,8 @@ export default function Login() {
       localStorage.setItem("token", res.data.token);
       navigate("/chat"); 
     } catch (err) {
+      console.log(err);
       const msg = err.response?.data?.error || "Error al iniciar sesión";
-      console.log(msg);
       setError(msg);
     }
   };
