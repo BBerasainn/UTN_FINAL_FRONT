@@ -22,7 +22,7 @@ export default function Login() {
     }
   };
 
-  console.log(err);
+  console.log(error);
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
