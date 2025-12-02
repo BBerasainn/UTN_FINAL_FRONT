@@ -18,6 +18,7 @@ export default function Login() {
       navigate("/chat"); 
     } catch (err) {
       const msg = err.response?.data?.error || "Error al iniciar sesión";
+      console.log(msg);
       setError(msg);
     }
   };
