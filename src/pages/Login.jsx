@@ -17,11 +17,12 @@ export default function Login() {
       localStorage.setItem("token", res.data.token);
       navigate("/chat"); 
     } catch (err) {
-      console.log(err);
       const msg = err.response?.data?.error || "Error al iniciar sesión";
       setError(msg);
     }
   };
+
+  console.log(err);
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
