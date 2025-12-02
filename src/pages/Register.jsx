@@ -27,7 +27,7 @@ export default function Register() {
       setTimeout(() => navigate("/"), 2000);
     } catch (error) {
       setMessage(
-        error.response?.data?.message || "Error al registrarse. Intente nuevamente."
+        error.response?.data?.error || "Error al registrarse. Intente nuevamente."
       );
     }
   };
